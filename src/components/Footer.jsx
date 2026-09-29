@@ -121,15 +121,15 @@ const Footer = () => {
               </li>
 
               <li>
-                Calabar, Cross River State
+                Calabar, Cross River State.
               </li>
 
               <li>
                 <a
-                  href="mailto:crsmoh5@gmail.com"
+                  href="mailto:ictcrsmohwebsite@gmail.com"
                   className="transition hover:text-white"
                 >
-                  crsmoh5@gmail.com
+                  ictcrsmohwebsite@gmail.com
                 </a>
               </li>
 
@@ -138,7 +138,7 @@ const Footer = () => {
                   href="tel:+2340000000000"
                   className="transition hover:text-white"
                 >
-                  +234 000 000 0000
+                  +234 706 924 8576
                 </a>
               </li>
             </ul>
