@@ -2,6 +2,10 @@ import React from "react";
 
 import placeholder from "../assets/placeholder.jpg";
 import commissioner from "../assets/commissioner.jpg";
+import nursing from "../assets/nursing.jpeg";
+import ps from "../assets/PS.jpeg";
+import medical from "../assets/medical.jpeg";
+import da from "../assets/DA.jpeg"
 
 const About = () => {
   const complaintSteps = [
@@ -272,7 +276,7 @@ const About = () => {
           {/* Leader 2 */}
           <article className="overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
             <img
-              src={placeholder}
+              src={ps}
               alt="Dr. Jonah Offor"
               className="h-64 w-full object-cover"
             />
@@ -291,7 +295,7 @@ const About = () => {
           {/* Leader 3 */}
           <article className="overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
             <img
-              src={placeholder}
+              src={medical}
               alt="Dr. Stephen Agbor"
               className="h-64 w-full object-cover"
             />
@@ -310,7 +314,7 @@ const About = () => {
           {/* Leader 4 */}
           <article className="overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
             <img
-              src={placeholder}
+              src={nursing}
               alt="Mrs. Obo-ojor Ogar"
               className="h-64 w-full object-cover"
             />
@@ -348,7 +352,7 @@ const About = () => {
           {/* Leader 6 */}
           <article className="overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
             <img
-              src={placeholder}
+              src={da}
               alt="Leadership team member"
               className="h-64 w-full object-cover"
             />
@@ -359,7 +363,7 @@ const About = () => {
               </h3>
 
               <p className="mt-1 text-sm text-gray-600">
-                Position
+                Director of Administration 
               </p>
             </div>
           </article>
