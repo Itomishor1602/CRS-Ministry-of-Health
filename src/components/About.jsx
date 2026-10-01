@@ -6,6 +6,8 @@ import nursing from "../assets/nursing.jpeg";
 import ps from "../assets/PS.jpeg";
 import medical from "../assets/medical.jpeg";
 import da from "../assets/DA.jpeg"
+import pharm from "../assets/pharm.jpeg"
+import ph from "../assets/ph.jpeg"
 
 const About = () => {
   const complaintSteps = [
@@ -344,7 +346,7 @@ const About = () => {
               </h3>
 
               <p className="mt-1 text-sm text-gray-600">
-                Director, Research and Planning
+                Director, Health, Planning, Research and Statistics
               </p>
             </div>
           </article>
@@ -371,18 +373,18 @@ const About = () => {
           {/* Leader 7 */}
           <article className="overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
             <img
-              src={placeholder}
+              src={pharm}
               alt="Leadership team member"
               className="h-64 w-full object-cover"
             />
 
             <div className="p-5">
               <h3 className="text-lg font-semibold text-gray-900">
-                Name
+                Pharm. Ezong Sunday
               </h3>
 
               <p className="mt-1 text-sm text-gray-600">
-                Position
+                Director, Pharmaceutical Services
               </p>
             </div>
           </article>
@@ -397,11 +399,11 @@ const About = () => {
 
             <div className="p-5">
               <h3 className="text-lg font-semibold text-gray-900">
-                Name
+                Mr. Patrick Odu
               </h3>
 
               <p className="mt-1 text-sm text-gray-600">
-                Position
+                Director, Public Health
               </p>
             </div>
           </article>
