@@ -7,28 +7,28 @@ const Contact = () => {
 
   const [status, setStatus] = useState("");
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+ const sendEmail = (e) => {
+  e.preventDefault();
+  setStatus("sending");
 
-    setStatus("sending");
-
-    emailjs.sendForm(
-  "service_k308h9g",   // service ID 
-  "template_6ykkb2m",  // template ID 
-  form.current,
-  { publicKey: "OD7O715vwUadRxuuU" }
-)
-      .then(
-        () => {
-          setStatus("success");
-          form.current.reset();
-        },
-       (error) => {
-  console.error("EmailJS Error:", error);
-  setStatus("error");
-}
-      );
-  };
+  emailjs
+    .sendForm(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      form.current,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+    .then(
+      () => {
+        setStatus("success");
+        form.current.reset();
+      },
+      (error) => {
+        console.error("EmailJS Error:", error);
+        setStatus("error");
+      }
+    );
+};
 
   return (
     <section
