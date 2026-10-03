@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import logo from "../assets/logo.png";
 import hero from "../assets/hero.jpg";
 import crs from "../assets/crs.jpg";
+import herotwo from "../assets/herotwo.jpg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ const Header = () => {
     <header className="relative min-h-screen overflow-hidden">
       {/* Hero Background */}
       <img
-        src={hero}
+        src={herotwo}
         alt=""
         aria-hidden="true"
         className="absolute inset-0 h-full w-full object-cover"

@@ -8,6 +8,7 @@ import medical from "../assets/medical.jpeg";
 import da from "../assets/DA.jpeg"
 import pharm from "../assets/pharm.jpeg"
 import ph from "../assets/ph.jpeg"
+import lab from "../assets/lab.jpeg"
 
 const About = () => {
   const complaintSteps = [
@@ -270,7 +271,7 @@ const About = () => {
 
             <div className="border-t-4 border-blue-600 p-6">
               <p className="text-sm leading-6 text-gray-600">
-                Honorable Commissioner, Cross River State Ministry of Health.
+                Honorable Commissioner Cross River State Ministry of Health.
               </p>
             </div>
           </article>
@@ -294,7 +295,27 @@ const About = () => {
             </div>
           </article>
 
+          
           {/* Leader 3 */}
+          <article className="overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+            <img
+              src={da}
+              alt="Leadership team member"
+              className="h-64 w-full object-cover"
+            />
+
+            <div className="p-5">
+              <h3 className="text-lg font-semibold text-gray-900">
+                Mrs. Mary Ntun
+              </h3>
+
+              <p className="mt-1 text-sm text-gray-600">
+                Director of Administration 
+              </p>
+            </div>
+          </article>
+
+          {/* Leader 4 */}
           <article className="overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
             <img
               src={medical}
@@ -308,12 +329,12 @@ const About = () => {
               </h3>
 
               <p className="mt-1 text-sm text-gray-600">
-                Director, Medical and Dental Services
+                Director Medical and Dental Services
               </p>
             </div>
           </article>
 
-          {/* Leader 4 */}
+          {/* Leader 5 */}
           <article className="overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
             <img
               src={nursing}
@@ -323,16 +344,16 @@ const About = () => {
 
             <div className="p-5">
               <h3 className="text-lg font-semibold text-gray-900">
-                Mrs. Obo-ojor Ogar
+                Mrs. Roseline Obo-jor Ogar
               </h3>
 
               <p className="mt-1 text-sm text-gray-600">
-                Director, Nursing and Midwifery Services
+                Director Nursing Services
               </p>
             </div>
           </article>
 
-          {/* Leader 5 */}
+          {/* Leader 6 */}
           <article className="overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
             <img
               src={placeholder}
@@ -346,29 +367,11 @@ const About = () => {
               </h3>
 
               <p className="mt-1 text-sm text-gray-600">
-                Director, Health, Planning, Research and Statistics
+                Director Health Planning Research and Statistics
               </p>
             </div>
           </article>
 
-          {/* Leader 6 */}
-          <article className="overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-            <img
-              src={da}
-              alt="Leadership team member"
-              className="h-64 w-full object-cover"
-            />
-
-            <div className="p-5">
-              <h3 className="text-lg font-semibold text-gray-900">
-                Name
-              </h3>
-
-              <p className="mt-1 text-sm text-gray-600">
-                Director of Administration 
-              </p>
-            </div>
-          </article>
 
           {/* Leader 7 */}
           <article className="overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
@@ -384,7 +387,7 @@ const About = () => {
               </h3>
 
               <p className="mt-1 text-sm text-gray-600">
-                Director, Pharmaceutical Services
+                Director Pharmaceutical Services
               </p>
             </div>
           </article>
@@ -392,7 +395,7 @@ const About = () => {
           {/* Leader 8 */}
           <article className="overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
             <img
-              src={placeholder}
+              src={ph}
               alt="Leadership team member"
               className="h-64 w-full object-cover"
             />
@@ -403,7 +406,7 @@ const About = () => {
               </h3>
 
               <p className="mt-1 text-sm text-gray-600">
-                Director, Public Health
+                Director Public Health
               </p>
             </div>
           </article>
@@ -411,18 +414,18 @@ const About = () => {
           {/* Leader 9 */}
           <article className="overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
             <img
-              src={placeholder}
+              src={lab}
               alt="Leadership team member"
               className="h-64 w-full object-cover"
             />
 
             <div className="p-5">
               <h3 className="text-lg font-semibold text-gray-900">
-                Name
+                Mr.Patrick Osang
               </h3>
 
               <p className="mt-1 text-sm text-gray-600">
-                Position
+                Director Laboratory Services
               </p>
             </div>
           </article>
