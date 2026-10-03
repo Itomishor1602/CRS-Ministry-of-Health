@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 import logo from "../assets/logo.png";
-import hero from "../assets/hero.jpg";
 import crs from "../assets/crs.jpg";
 import herotwo from "../assets/herotwo.jpg";
 
