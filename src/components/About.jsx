@@ -9,6 +9,11 @@ import da from "../assets/DA.jpeg"
 import pharm from "../assets/pharm.jpeg"
 import ph from "../assets/ph.jpeg"
 import lab from "../assets/lab.jpeg"
+import SAnur from "../assets/SAnur.jpeg"
+import SAnuredu from "../assets/SAnuredu.jpeg"
+import SAhealth from "../assets/SAhealth.jpeg"
+import HOD from "../assets/HOD.jpeg"
+import FS from "../assets/F&S.jpeg"
 
 const About = () => {
   const complaintSteps = [
@@ -433,18 +438,90 @@ const About = () => {
           {/* Leader 10 */}
           <article className="overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
             <img
-              src={placeholder}
+              src={HOD}
               alt="Leadership team member"
               className="h-64 w-full object-cover"
             />
 
             <div className="p-5">
               <h3 className="text-lg font-semibold text-gray-900">
-                Name
+                Dr Simon Obogo
               </h3>
 
               <p className="mt-1 text-sm text-gray-600">
-                Position
+                HOD Food Safety and Inspection
+              </p>
+            </div>
+          </article>
+          {/* Leader 11 */}
+          <article className="overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+            <img
+              src={FS}
+              alt="Leadership team member"
+              className="h-64 w-full object-cover"
+            />
+
+            <div className="p-5">
+              <h3 className="text-lg font-semibold text-gray-900">
+                Dr. Inyang John
+               </h3>
+
+              <p className="mt-1 text-sm text-gray-600">
+                Director Finance and Supply
+              </p>
+            </div>
+          </article>
+          {/* Leader 12 */}
+          <article className="overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+            <img
+              src={SAhealth}
+              alt="Leadership team member"
+              className="h-64 w-full object-cover"
+            />
+
+            <div className="p-5">
+              <h3 className="text-lg font-semibold text-gray-900">
+                Dr. Ekpo Ekpo Bassey
+              </h3>
+
+              <p className="mt-1 text-sm text-gray-600">
+                Special Adviser to the Governor on Health
+              </p>
+            </div>
+          </article>
+          {/* Leader 14  */}
+          <article className="overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+            <img
+              src={SAnuredu}
+              alt="Leadership team member"
+              className="h-64 w-full object-cover"
+            />
+
+            <div className="p-5">
+              <h3 className="text-lg font-semibold text-gray-900">
+                Dr. CocoBassey Esu
+              </h3>
+
+              <p className="mt-1 text-sm text-gray-600">
+                Special Adviser to the Governor on Nursing
+              </p>
+            </div>
+          </article>
+          {/* Leader 14  */}
+          <article className="overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+            <img
+              src={SAnuredu}
+              alt="Leadership team member"
+              className="h-64 w-full object-cover"
+            />
+
+            <div className="p-5">
+              <h3 className="text-lg font-semibold text-gray-900">
+                Mrs. Uduak Spencer Efem
+              </h3>
+
+              <p className="mt-1 text-sm text-gray-600">
+                Special Adviser to the Governor on Nursing Education
               </p>
             </div>
           </article>
