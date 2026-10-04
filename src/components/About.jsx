@@ -492,7 +492,7 @@ const About = () => {
           {/* Leader 14  */}
           <article className="overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
             <img
-              src={SAnuredu}
+              src={SAnur}
               alt="Leadership team member"
               className="h-64 w-full object-cover"
             />
