@@ -1,4 +1,3 @@
-import placeholder from "../assets/placeholder.jpg";
 import commissioner from "../assets/commissioner.jpg";
 import nursing from "../assets/nursing.jpeg";
 import ps from "../assets/PS.jpeg";
@@ -12,6 +11,7 @@ import SAnuredu from "../assets/SAnuredu.jpeg"
 import SAhealth from "../assets/SAhealth.jpeg"
 import HOD from "../assets/HOD.jpeg"
 import FS from "../assets/F&S.jpeg"
+import dhprs from "../assets/dhprs.jpeg"
 
 const About = () => {
   const complaintSteps = [
@@ -359,14 +359,14 @@ const About = () => {
           {/* Leader 6 */}
           <article className="overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
             <img
-              src={placeholder}
-              alt="Mr. Christopher Ushuasung"
+              src={dhprs}
+              alt="Hon. Chris U. Ushuasung"
               className="h-64 w-full object-cover"
             />
 
             <div className="p-5">
               <h3 className="text-lg font-semibold text-gray-900">
-                Mr. Christopher Ushuasung
+                Hon. Chris U. Ushuasung
               </h3>
 
               <p className="mt-1 text-sm text-gray-600">
