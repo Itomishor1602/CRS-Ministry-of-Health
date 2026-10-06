@@ -1,13 +1,11 @@
-import React from "react";
-
 import placeholder from "../assets/placeholder.jpg";
 import commissioner from "../assets/commissioner.jpg";
 import nursing from "../assets/nursing.jpeg";
 import ps from "../assets/PS.jpeg";
 import medical from "../assets/medical.jpeg";
-import da from "../assets/DA.jpeg"
+import datwo from "../assets/datwo.jpeg"
 import pharm from "../assets/pharm.jpeg"
-import ph from "../assets/ph.jpeg"
+import ph from "../assets/phtwo.jpeg"
 import lab from "../assets/lab.jpeg"
 import SAnur from "../assets/SAnur.jpeg"
 import SAnuredu from "../assets/SAnuredu.jpeg"
@@ -304,7 +302,7 @@ const About = () => {
           {/* Leader 3 */}
           <article className="overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
             <img
-              src={da}
+              src={datwo}
               alt="Leadership team member"
               className="h-64 w-full object-cover"
             />

@@ -32,7 +32,7 @@ const Footer = () => {
               <div className="mt-4 flex items-center gap-3">
                 {/* X */}
                 <a
-                  href="https://x.com/CRSMOH"
+                  href="https://x.com/ICT_CRSMOH"
                     target="_blank"
                     rel="noopener noreferrer"
                   aria-label="Follow us on X"
@@ -43,7 +43,7 @@ const Footer = () => {
 
                 {/* Instagram */}
                 <a
-                  href="https://www.instagram.com/popular/cross-river-state-ministry-of-health/"
+                  href="https://www.instagram.com/ictcrsmohwebsite/"
                   aria-label="Follow us on Instagram"
                   target="_blank"
                   rel="noopener noreferrer"
