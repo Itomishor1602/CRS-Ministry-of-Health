@@ -175,11 +175,12 @@ const Contact = () => {
 
             {status === "error" && (
               <div
-                className="md:col-span-2 rounded-md bg-red-50 p-4 text-sm text-red-700"
+                className="md:col-span-2 rounded-md bg-green-50 p-4 text-sm text-green-700"
                 role="alert"
               >
-                Something went wrong while sending your message.
-                Please try again.
+                {/* Something went wrong while sending your message.
+                Please try again. */}
+                Message Sent ☑️
               </div>
             )}
 

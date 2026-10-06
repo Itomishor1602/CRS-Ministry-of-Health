@@ -6,7 +6,7 @@ const WebsiteManagers = () => {
   const managers = [
     {
       name: "Mr. Eteng Etta",
-      role: "",
+      role: "Team Supervisor",
       image: eteng,
     },
     {
@@ -16,7 +16,7 @@ const WebsiteManagers = () => {
     },
     {
       name: "Victor Itom-Ishor Ayim",
-      role: "Intern",
+      role: "Ministry Intern",
       image: victor,
     },
   ];
@@ -50,7 +50,7 @@ const WebsiteManagers = () => {
               <img
                 src={manager.image}
                 alt={manager.name}
-                className="h-20 w-20 rounded-full object-cover ring-2 ring-white shadow-sm"
+                className="h-40 w-40 rounded-full object-cover ring-2 ring-white shadow-sm"
               />
 
               <h3 className="mt-3 text-sm font-medium text-gray-700">
