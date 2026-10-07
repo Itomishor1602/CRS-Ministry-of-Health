@@ -182,8 +182,7 @@ const Contact = () => {
                 className="rounded-md bg-green-50 p-4 text-sm text-green-700 md:col-span-2"
                 role="status"
               >
-                Your message has been sent successfully.
-                Thank you for contacting the Ministry of Health.
+                Message Sent ☑️
               </div>
             )}
 
