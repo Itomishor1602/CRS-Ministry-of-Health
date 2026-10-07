@@ -1,34 +1,43 @@
-
-import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import { useState } from "react";
 
 const Contact = () => {
-  const form = useRef();
-
   const [status, setStatus] = useState("");
 
- const sendEmail = (e) => {
-  e.preventDefault();
-  setStatus("sending");
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setStatus("sending");
 
-  emailjs
-    .sendForm(
-      import.meta.env.VITE_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-      form.current,
-      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-    )
-    .then(
-      () => {
+    const form = event.target;
+    const formData = new FormData(form);
+
+    formData.append(
+      "access_key",
+      "89fcbda4-a8e3-4ed5-aa8a-4c5547e4280b"
+    );
+
+    try {
+      const response = await fetch(
+        "https://api.web3forms.com/submit",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      const data = await response.json();
+
+      if (data.success) {
         setStatus("success");
-        form.current.reset();
-      },
-      (error) => {
-        console.error("EmailJS Error:", error);
+        form.reset();
+      } else {
+        console.error(data);
         setStatus("error");
       }
-    );
-};
+    } catch (error) {
+      console.error(error);
+      setStatus("error");
+    }
+  };
 
   return (
     <section
@@ -38,7 +47,6 @@ const Contact = () => {
     >
       <div className="mx-auto max-w-6xl">
 
-        {/* Heading */}
         <div className="mb-10 max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-wider text-blue-600">
             Get In Touch
@@ -51,21 +59,19 @@ const Contact = () => {
             Contact Us
           </h2>
 
-          <p className="mt-3 text-gray-600">
+          <p className="mt-3 leading-7 text-gray-600">
             Have a question, suggestion, or need assistance?
             Send us a message and our team will get back to you.
           </p>
         </div>
 
-        {/* Form */}
         <form
-          ref={form}
-          onSubmit={sendEmail}
+          onSubmit={handleSubmit}
           className="rounded-xl bg-white p-6 shadow-sm sm:p-8"
         >
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
 
-            {/* Name */}
+            {/* Full Name */}
             <div>
               <label
                 htmlFor="name"
@@ -162,36 +168,46 @@ const Contact = () => {
               />
             </div>
 
-            {/* Status */}
+            {/* Spam protection */}
+            <input
+              type="checkbox"
+              name="botcheck"
+              className="hidden"
+              style={{ display: "none" }}
+            />
+
+            {/* Success */}
             {status === "success" && (
               <div
-                className="md:col-span-2 rounded-md bg-green-50 p-4 text-sm text-green-700"
+                className="rounded-md bg-green-50 p-4 text-sm text-green-700 md:col-span-2"
                 role="status"
               >
-                Your message has been sent successfully. Thank you for
-                contacting the Ministry of Health.
+                Your message has been sent successfully.
+                Thank you for contacting the Ministry of Health.
               </div>
             )}
 
+            {/* Error */}
             {status === "error" && (
               <div
-                className="md:col-span-2 rounded-md bg-green-50 p-4 text-sm text-green-700"
+                className="rounded-md bg-red-50 p-4 text-sm text-red-700 md:col-span-2"
                 role="alert"
               >
-                {/* Something went wrong while sending your message.
-                Please try again. */}
-                Message Sent ☑️
+                Something went wrong while sending your message.
+                Please try again.
               </div>
             )}
 
-            {/* Submit */}
+            {/* Button */}
             <div className="md:col-span-2">
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="cursor-pointer inline-flex min-h-11 w-full items-center justify-center rounded-md bg-blue-600 px-6 py-3 font-medium text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
+                className="inline-flex min-h-11 w-full items-center justify-center rounded-md bg-blue-600 px-6 py-3 font-medium text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
               >
-                {status === "sending" ? "Sending..." : "Send Message"}
+                {status === "sending"
+                  ? "Sending..."
+                  : "Send Message"}
               </button>
             </div>
 
